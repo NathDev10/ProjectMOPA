@@ -1,0 +1,109 @@
+.Header{
+    font-weight: bold;
+    background-color: black;
+    color: #f70776;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.ButtonCreate{
+    font-weight: bold;
+    background-color: black;
+    color: #f70776;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    width: 30%;
+}
+
+.FormAffair{
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    height: 76vh; /* Ajuster la hauteur selon vos besoins */
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #f70776;
+    background-color: black;
+}
+
+.Affair{
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    height: 76vh; /* Ajuster la hauteur selon vos besoins */
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #f70776;
+    background-color: black;
+    
+}
+
+.TextAffair{
+    padding: 15px;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.ButtonFooter{
+    width: 100vh;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+.container{
+    display: flex;
+  justify-content: center; /* Centre horizontalement */
+  align-items: center; /* Centre verticalement */
+  height: 76vh; /* Ajuster la hauteur selon vos besoins */
+}
+
+.Home{
+    width: 100%;
+    height: 100%; 
+    background-color: black;
+}
+
+
+/* CSS */
+.button-27 {
+  appearance: none;
+  background-color: #000000;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #f70776;
+  cursor: pointer;
+  display: inline-block;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 30%;
+  will-change: transform;
+}
+
+.button-27:disabled {
+  pointer-events: none;
+}
+
+.button-27:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.button-27:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
