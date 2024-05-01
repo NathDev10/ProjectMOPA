@@ -9,14 +9,14 @@ import Home from './pages/Home';
 const Stack = createStackNavigator();
 
 export default function App() {
-  return (        
-  <NavigationContainer>
-    <Stack.Navigator>
-        <Stack.Screen name="Home" component={Home} />
-        <Stack.Screen name="CreatAffair" component={CreatAffair} />
-        <Stack.Screen name="Affair" component={Affair} />
-    </Stack.Navigator>
-  </NavigationContainer>   
+  return (
+    <NavigationContainer>
+      <Stack.Navigator>
+          <Stack.Screen name="Home" component={Home} />
+          <Stack.Screen name="CreatAffair" component={CreatAffair} />
+          <Stack.Screen name="Affair" component={Affair} />
+      </Stack.Navigator>
+    </NavigationContainer>    
   );
 }
 
