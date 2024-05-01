@@ -9,33 +9,26 @@ export default function ModeSelector() {
   // Fonction pour gérer le clic sur un bouton
   const handleButtonClick = (buttonName) => {
     setSelectedButton(buttonName);
+    if(buttonName == "Sauvage"){
+      document.documentElement.style.setProperty('--main-color', 'black');
+    }else{
+      document.documentElement.style.setProperty('--main-color', 'white');
+    }
   };
 
   return (
     <div className='ModeSelector'>
       <button
-        className={selectedButton === 'Soft' ? 'selectedButton' : 'noselectedButton'}
-        onClick={() => handleButtonClick('Soft')}
+        className={selectedButton === 'Romantique' ? 'selectedButton' : 'noselectedButton'}
+        onClick={() => handleButtonClick('Romantique')}
       >
-        Soft
-      </button>
-      <button
-        className={selectedButton === 'Normal' ? 'selectedButton' : 'noselectedButton'}
-        onClick={() => handleButtonClick('Normal')}
-      >
-        Normal
+        Romantique
       </button>
       <button
         className={selectedButton === 'Sauvage' ? 'selectedButton' : 'noselectedButton'}
         onClick={() => handleButtonClick('Sauvage')}
       >
         Sauvage
-      </button>
-      <button
-        className={selectedButton === 'Extreme' ? 'selectedButton' : 'noselectedButton'}
-        onClick={() => handleButtonClick('Extreme')}
-      >
-        Extreme
       </button>
     </div>
   );

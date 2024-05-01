@@ -11,7 +11,7 @@ export default function CreatAffair({navigation}) {
     const [description, setDescription] = useState('');
     const [location, setLocation] = useState('');
     const [story, setStory] = useState('');
-    const [loading, setLoading] = useState(false)
+    const [loading, setLoading] = useState(false);
   
     async function generateStory() {
 
@@ -77,7 +77,7 @@ export default function CreatAffair({navigation}) {
         <View>
           <Header></Header>
           <div className='FormAffair'>
-            <label>Génération en cours</label>
+            <label>Nous preparons votre escapade érotique... Tu vas être bien remplie...</label>
             <br/>
           <img src="../assets/loading.svg" height={150} width={150}></img>
           </div>
@@ -89,7 +89,7 @@ export default function CreatAffair({navigation}) {
         <View>
           <Header></Header>
           <div className='FormAffair'>
-            <input type="input" className="form__field" placeholder="Name" name="name" id='name' required value={name}  maxLength={25} onChange={e => setName(e.target.value)}/>
+            <input type="input" className="form__field" placeholder="Nom" name="name" id='name' required value={name}  maxLength={25} onChange={e => setName(e.target.value)}/>
             <textarea value={description} className="form__field" placeholder="Description" maxLength={200} onChange={e => setDescription(e.target.value)} />
             <input type="text" className="form__field" value={location} placeholder="Lieux" maxLength={25} onChange={e => setLocation(e.target.value)} />
             <ModeSelector></ModeSelector>

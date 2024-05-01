@@ -1,6 +1,6 @@
 :root {
   --main-font: Arial, Helvetica, sans-serif;
-  --main-color: black;
+  --main-color: white;
   --font-color:#f70776;
   --primary:#11998e;
   --seconodary:#38ef7d;
@@ -167,9 +167,13 @@
   background-color: var(--primary-color); /* Couleur de fond lorsque le bouton est sélectionné */
   color: white; /* Couleur du texte lorsque le bouton est sélectionné */
   /* Autres styles personnalisés pour le bouton sélectionné */
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
 }
 .noselectedButton {
   background-color: var(--main-color); /* Couleur de fond lorsque le bouton est sélectionné */
-  color: white; /* Couleur du texte lorsque le bouton est sélectionné */
+  color: var(--primary-color); /* Couleur du texte lorsque le bouton est sélectionné */
   /* Autres styles personnalisés pour le bouton sélectionné */
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
 }
