@@ -77,7 +77,7 @@ export default function CreatAffair({navigation}) {
         <View>
           <Header></Header>
           <div className='FormAffair'>
-            <label>Nous preparons votre escapade érotique... Tu vas être bien remplie...</label>
+            <label>Nous preparons votre escapade érotique... Tu vas être toute vide...</label>
             <br/>
           <img src="../assets/loading.svg" height={150} width={150}></img>
           </div>

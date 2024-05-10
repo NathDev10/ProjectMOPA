@@ -14,10 +14,6 @@ export default function Affair({route}) {
                 <div className='TextAffair'>
                   {Text}
                   </div>
-                  <div className='ButtonFooter'>
-                      <button className='button-27'>Save</button> 
-                      <button className='button-27'>Delete</button>
-                  </div>
             </div>
       </View>
   );
