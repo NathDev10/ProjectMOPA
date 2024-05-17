@@ -10,7 +10,7 @@ export default function Affair({route}) {
       <View>
           <Header></Header>
             <div className='Affair'>
-            <ReactAudioPlayer  src="../assets/VERSE.mp3"  autoPlay  controls/>
+            <ReactAudioPlayer  src="../assets/output_sexe1.mp3"  autoPlay  controls/>
                 <div className='TextAffair'>
                   {Text}
                   </div>
