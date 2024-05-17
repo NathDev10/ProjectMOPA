@@ -10,9 +10,9 @@ export default function ModeSelector() {
   const handleButtonClick = (buttonName) => {
     setSelectedButton(buttonName);
     if(buttonName == "Sauvage"){
-      document.documentElement.style.setProperty('--main-color', 'black');
+      //document.documentElement.style.setProperty('--main-color', 'black');
     }else{
-      document.documentElement.style.setProperty('--main-color', 'white');
+      //document.documentElement.style.setProperty('--main-color', 'white');
     }
   };
 

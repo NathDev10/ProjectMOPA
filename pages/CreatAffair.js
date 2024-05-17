@@ -29,6 +29,7 @@ export default function CreatAffair({navigation}) {
       try {
         console.log('Envoi de la requête au serveur...');
         //const response = await axios.post('http://localhost:5000/generate', storyData);
+        //const response = await axios.post('http://localhost:5000/generate_audio'); 
         //console.log('Réponse reçue du serveur:', response.data);
         const response = {
           data : {

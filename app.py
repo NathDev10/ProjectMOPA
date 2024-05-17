@@ -22,7 +22,7 @@ def generate():
     lieu = data["lieu"]
 
     # Créer le prompt avec les choix de l'utilisateur
-    prompt = f"Ecris une histoire érotique de plus de 500 mots ou tu joueras le rôle d'une personne appelée {nom} : {description} dans le lieu suivant : {lieu}. Tu raconteras ta rencontre avec le lecteur et fera monter la tension jusqu'au moment ou tu décriras les ébats physiques explicitement au lecteur a qui tu t'adresseras directement"
+    prompt = f"Je suis une femme, écris-moi une histoire pornographique de 800 mots. Lors d’une introduction, tu te présenteras,{nom} en t’appuyant sur la description suivante : {description} ; et en nous incluant dans {lieu} de manière réaliste. Lors de cette introduction, tu introduiras les premiers éléments de séduction et de curiosité, à la fois provenant de moi comme de toi, {nom}. Tu écriras tes paroles destinées à me séduire et menant à une excitation sexuelle en 200 mots environ, tandis que je prends également l’initiative de te séduire. Puis tu décriras en détail nos préliminaires qui seront sauvages, détaillant avec précision nos sexes, mes émotions et mon excitation, et l’attitude brûlante de ton désir pour moi.Tu enchaîneras de manière naturelle et volontaire vers un passage à l’acte détaillé. La narration commencera avec une pénétration vaginale tandis que ma chatte sera très excitée. La narration poursuivra avec un rapport anal, décrit dans le détail, débutant par une pénétration douce et s’accentuant davantage. Tu décriras pour moi mon attitude volontaire, engagée et gourmande dans mon rapport avec toi. La narration mettra un point d’honneur à me procurer un orgasme. Enfin, en 100 mots environ, une fois mon orgasme atteint, tu feras redescendre la température en précisant ton éjaculation ailleurs que dans mon vagin et en détaillant mon état émotionnel comme ma condition physique après une telle expérience."
 
     # Créer le client Mistral
     client = MistralClient(api_key=api_key)
@@ -61,7 +61,7 @@ def generate_audio():
 
     data = {
       "text": texte,
-      "model_id": "eleven_monolingual_v1",
+      "model_id": "eleven_multilingual_v2",
       "voice_settings": {
         "stability": 0.5,
         "similarity_boost": 0.5
@@ -78,9 +78,3 @@ def generate_audio():
     return jsonify({"filename": "output.mp3"})
 if __name__ == "__main__":
     app.run(debug=True)
-
-
-
-
-
-
