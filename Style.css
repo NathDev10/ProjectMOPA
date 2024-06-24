@@ -1,191 +1,249 @@
-:root {
-  --main-font: Arial, Helvetica, sans-serif;
-  --main-color: white;
-  --font-color:#E77ADD; 
-  --primary:#11998e;
-  --seconodary:#38ef7d;
+@font-face {
+  font-family: 'Dynamo';
+  src: url('../Font/dynamoFont.otf') format('truetype');
 }
-/*#E77ADD
-#f70776
-
-*/
-.Title{
-    font-weight: bold;
-    background-color: var(--main-color);
-    color: var(--font-color);
-    text-align: center;
-    font-family:Arial, Helvetica, sans-serif;
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../Font/OpenSans.ttf') format('truetype');
+}
+:root{
+  --main-color: linear-gradient(90deg, #fff7ad, #ffa9f9);
+  --font-color: #007CC4;
+  --hard-color:linear-gradient(90deg,#ff3131, #ff914d);
 }
 
-.Header{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding-left: 20px;
-  padding-right: 20px;
-  align-items: center;
-  background-color: var(--main-color);
-  color: var(--font-color);
-}
-
-.ButtonCreate{
-    font-weight: bold;
-    background-color: var(--main-color);
-    color: var(--font-color);
-    text-align: center;
-    font-family:Arial, Helvetica, sans-serif;
-    width: 30%;
-}
-
-.FormAffair{
-    display: flex;
-    justify-content: center; /* Centre horizontalement */
-    align-items: center; /* Centre verticalement */
-    height: 76vh; /* Ajuster la hauteur selon vos besoins */
-    flex-direction: column;
-    font-family: Arial, Helvetica, sans-serif;
-    color: var(--font-color);
-    background-color: var(--main-color);
-}
-
-.body{
-  overflow-y: auto;
-}
-
-.Affair{
-    display: flex;
-    justify-content: center; /* Centre horizontalement */
-    align-items: center; /* Centre verticalement */
-    height: 76vh; /* Ajuster la hauteur selon vos besoins */
-    flex-direction: column;
-    font-family: Arial, Helvetica, sans-serif;
-    color: var(--font-color);
-    background-color: var(--main-color);
-    overflow-y: auto;
-}
-
-.TextAffair{
-    padding: 15px;
-    padding-left: 20%;
-    padding-right: 20%;
-    margin:15px;
-    overflow-y: auto;
-}
-
-.ButtonFooter{
-    width: 100vh;
-    display: flex;
-    justify-content: space-around;
-    padding: 15px;
-}
-
-.container{
-  display: flex;
-  justify-content: center; /* Centre horizontalement */
-  align-items: center; /* Centre verticalement */
-  height: 76vh; /* Ajuster la hauteur selon vos besoins */
-}
-
-.Home{
-    width: 100%;
-    height: 100%; 
-    background-color: var(--main-color);
-}
-
-
-/* CSS */
-.button-27 {
-  appearance: none;
-  background-color: var(--main-color);
-  border: 2px solid var(--font-color);
-  border-radius: 15px;
-  box-sizing: border-box;
-  color: var(--font-color);
-  cursor: pointer;
-  display: inline-block;
-  font-family:Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: normal;
+html, body, #root {
   margin: 0;
-  min-height: 60px;
-  min-width: 0;
-  outline: none;
-  padding: 16px 24px;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Dynamo', sans-serif;
+  color:var(--font-color);
+  background: var(--main-color);
+}
+
+.FrontPage {
   text-align: center;
-  text-decoration: none;
-  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  width: 30%;
-  will-change: transform;
+  width: 100%;
+  height: 100%;
+  background: var(--main-color);
+}
+.StoryPage{
+  text-align: center;
+  width: 100%;
+  background: var(--main-color);
+  overflow-y: auto;
+  height: 190vh;
+  padding: 10px;
+}
+.doubleFleche{
+  padding-top: 100px;
+  padding-bottom: 50px;
 }
 
-.button-27:disabled {
-  pointer-events: none;
+.title {
+  font-size: 8em;
 }
 
-.button-27:hover {
-  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
-  transform: translateY(-2px);
+.subtitle {
+  font-size: 2em;
+  margin: 20px 0;
 }
 
-.button-27:active {
-  box-shadow: none;
-  transform: translateY(0);
-}
-/* Définition des couleurs */
-:root {
-  --primary-color: #f70776;
-  --secondary-color: #fff;
-  --white-color: #fff;
-  --gray-color: #9b9b9b;
-}
-
-/* Styles pour le champ de formulaire */
-.form__field {
-  font-family: inherit;
-  width: 20%;
-  border: 0;
-  border-bottom: 2px solid var(--gray-color);
-  outline: 0;
-  font-size: 1.3rem;
-  color: var(--font-color);
-  padding: 7px 0;
-  background: transparent;
-  transition: border-color 0.2s;
-  margin-bottom: 25px;
-  resize: none;
+.enter-button {
+  border: none;
+  padding: 15px 30px;
+  font-family: 'Dynamo';
+  color:#007CC4;
+  font-size: 3em;
+  cursor: pointer;
+  border-radius: 60px;
+  border: 3px solid #007CC4;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  background: var(--main-color);
+  width: 70rem;
+  height: 100px;
 }
 
-.form__field:focus {
-  padding-bottom: 6px;
-  font-weight: 700;
-  border-width: 3px;
-  border-image: linear-gradient(to right, var(--font-color), var(--secondary-color));
-  border-image-slice: 1;
+.enter-button:hover {
+  transform: scale(1.04);
 }
 
-/* Réinitialisation du style par défaut des champs de formulaire */
-.form__field:required,
-.form__field:invalid {
-  box-shadow: none;
-}
-.ModeSelector{
-  background-color: var(--main-color);
-  margin: 15px;
+.confirmation {
+  font-size: 0.9em;
+  margin-top: 10px;
+  font-family: 'OpenSans';
+  font-weight: bold;
 }
 
-.selectedButton {
-  background-color: var(--font-color); /* Couleur de fond lorsque le bouton est sélectionné */
-  color: white; /* Couleur du texte lorsque le bouton est sélectionné */
-  /* Autres styles personnalisés pour le bouton sélectionné */
-  border: 2px solid var(--font-color);
+.story-container {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  background: var(--main-color);
+  overflow-y: auto;
+  width: 100%;
+  height: 190vh;
 }
-.noselectedButton {
-  background-color: var(--main-color); /* Couleur de fond lorsque le bouton est sélectionné */
-  color: var(--font-color); /* Couleur du texte lorsque le bouton est sélectionné */
-  /* Autres styles personnalisés pour le bouton sélectionné */
-  border: 2px solid var(--font-color);
+
+.form-container{
+  vertical-align: center;
+  width: 60%;
 }
+.story-title {
+  font-size: 5em;
+  margin: 15px 0;
+}
+.Story-Text{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  background: var(--main-color);
+  border: 2px solid #007CC4;
+  font-family: 'OpenSans';
+  font-weight: bold;
+  border-radius: 60px;
+  margin-left: 25rem;
+  margin-right: 25rem;
+  margin-top: 15px;
+}
+.story-subtitle {
+  font-size: 2.5em;
+  margin: 15px 0;
+}
+
+.story-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.story-label {
+  margin: 10px 0;
+  font-size: 1em;
+  width: 100%;
+  font-family: 'OpenSans';
+}
+.hidden {
+  display: none;
+}
+.story-input {
+  width: 80%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 2px solid #007CC4;
+  border-radius: 60px;
+  background: var(--main-color);
+  font-weight: bold;
+  font-family:'OpenSans';
+}
+
+.story-button-group {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-top: 20px;
+}
+
+.story-romantic-button, .story-hot-button {
+  background: var(--main-color);
+  padding: 15px 30px;
+  font-size: 1.2em;
+  cursor: pointer;
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  border: 2px solid #007CC4;
+  margin: 0 10px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'OpenSans';
+  color:#007CC4;
+}
+
+.story-romantic-button:hover, .story-hot-button:hover {
+  transform: scale(1.04);
+}
+
+.story-romantic-button::before {
+  margin-right: 10px;
+}
+
+.story-hot-button::before {
+  margin-right: 10px;
+}
+
+.exampleStory{
+  border-radius: 60px;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  font-size: 2.5em;
+}
+
+.AlexStory{
+  margin: 5px;
+  border-radius: 60px;
+  border: 2px solid #007CC4;
+  background: var(--main-color);
+  height: 75vh;
+  width: 50vh;
+}
+
+/* styles.css */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-inner {
+  background: var(--main-color);
+  border: 2px solid #007CC4;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.popup-inner input {
+  margin: 10px 0;
+  width: 80%;
+  padding: 10px;
+  border: 2px solid #007CC4;
+  border-radius: 60px;
+  background: var(--main-color);
+  font-weight: bold;
+  font-family:'OpenSans';
+}
+
+.popup-inner button {
+  margin: 5px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  border: 2px solid #007CC4;
+  background: var(--main-color);
+  font-family: 'OpenSans';  
+  cursor: pointer;
+  color:#007CC4;
+}
+
+
+.popup-inner button:hover {
+  transform: scale(1.04);
+}
+

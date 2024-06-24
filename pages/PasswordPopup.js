@@ -1,0 +1,26 @@
+import React, { useState } from 'react';
+import '../Style.css'; // Assurez-vous d'importer votre fichier CSS
+
+const PasswordPopup = ({ onClose, onSubmit }) => {
+  const [password, setPassword] = useState('');
+
+  const handleSubmit = () => {
+    onSubmit(password);
+  };
+
+  return (
+    <div className="popup">
+        <h2>Enter Password</h2>
+        <input
+          type="password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+          placeholder="Password"
+        />
+        <button onClick={handleSubmit}>Submit</button>
+        <button onClick={onClose}>Close</button>
+    </div>
+  );
+};
+
+export default PasswordPopup;
